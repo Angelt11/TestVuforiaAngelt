@@ -677,9 +677,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cf4ee08469469d4c891cc7c96ab4552, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons: []
-  showAnimationName: 
-  hideAnimationName: 
+  buttons:
+  - {fileID: 1015615026}
+  - {fileID: 1519925665}
+  - {fileID: 183579057}
+  showAnimationName: Button Animation Play
+  hideAnimationName: Button Animation Reappear
   showButtonsDelay: 0.1
 --- !u!4 &324301448
 Transform:
@@ -1042,7 +1045,7 @@ GameObject:
   - component: {fileID: 1015615028}
   - component: {fileID: 1015615031}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Button (Legacy) Dancing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
