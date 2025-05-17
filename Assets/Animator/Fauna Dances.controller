@@ -47,6 +47,9 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: -4396896050472347915}
     m_Position: {x: 290, y: 210, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 8311251287574333408}
+    m_Position: {x: 381.27094, y: 25.94497, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -105,7 +108,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Idle
+  m_Name: Fauna Dances
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -130,7 +133,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Idle
+  m_Name: Fauna Dances
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Blend
@@ -173,6 +176,32 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: -203655887218126122, guid: b3a8b370c3e508e4e997cff0f5382305, type: 3}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &8311251287574333408
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Breakdance Ready
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: -203655887218126122, guid: 487ebf551b455e94d926d30196740329, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
