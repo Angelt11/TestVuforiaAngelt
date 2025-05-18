@@ -695,8 +695,8 @@ MonoBehaviour:
   - {fileID: 1015615026}
   - {fileID: 1519925665}
   - {fileID: 183579057}
-  showAnimationName: Button Animation Play
-  hideAnimationName: Button Animation Reappear
+  showAnimationName: Button Animation Reappear
+  hideAnimationName: Button Animation Play
   showButtonsDelay: 0.1
 --- !u!4 &324301448
 Transform:
@@ -2134,7 +2134,7 @@ MonoBehaviour:
   _OnSelectDance:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 324301447}
+      - m_Target: {fileID: 324301446}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
         m_MethodName: ShowButtons
         m_Mode: 1
