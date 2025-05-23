@@ -6,22 +6,24 @@ public class Dance_controller: MonoBehaviour
     [SerializeField]
     private Animator _characterAnimator;
     [SerializeField]
-    private UnityEvent _OnSelectDance;
+    private UnityEvent _onSelectDance;
     [SerializeField]
-    private UnityEvent _OnDanceSelected;
+    private UnityEvent _onDanceSelected;
     [SerializeField]
     private SoundData _currentSoundData;
     public void ActivateSelectDance()
     {
-        _OnSelectDance?.Invoke();
+        _onSelectDance?.Invoke();
     }
-    public void OnSelectedDance()
+    public void OnSelectedDance(SoundData soundData)
     {
-        _OnDanceSelected?.Invoke();
+        _currentSoundData = soundData;
+        _onDanceSelected?.Invoke();
     } 
-    public void OnselectedDance(SoundData soundData)
+    public void StartDance()
     {
-        _OnDanceSelected?.Invoke();
+        _characterAnimator.Play(_currentSoundData.animationName);
+        SoundManager.instance.PlayMusic(_currentSoundData.musicName);
     }
 
 }
