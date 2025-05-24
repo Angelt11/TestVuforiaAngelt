@@ -10,7 +10,7 @@ public class Timer : MonoBehaviour
     [SerializeField]
     private UnityEvent _onTimerFinished;
     private Coroutine _timerCoroutine;
-    private void StartTimer(float duration)
+    public void StartTimer(float duration)
         
     {
         _timerCoroutine = StartCoroutine(RunTimer(duration));
