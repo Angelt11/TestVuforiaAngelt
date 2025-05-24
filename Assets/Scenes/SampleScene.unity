@@ -2670,7 +2670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae52a58a6be396443947baa7eeef88d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterAnimator: {fileID: 0}
+  _characterAnimator: {fileID: 2016760094}
   _onSelectDance:
     m_PersistentCalls:
       m_Calls:
