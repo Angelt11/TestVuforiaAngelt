@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58629b71a4edf1746959dd08cd26ab49, type: 3}
   m_Name: Shopping Cart
   m_EditorClassIdentifier: 
-  musicName: 
-  animationName: 
-  NotesConfig: {fileID: 0}
+  musicName: "Cucu\xED Ganon - Suavemente"
+  animationName: Shopping Cart Dance
+  notesConfig: {fileID: 0}

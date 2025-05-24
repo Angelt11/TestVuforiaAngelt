@@ -5,5 +5,5 @@ public class SoundData : ScriptableObject
 {
     public string musicName;
     public string animationName;
-    public TextAsset NotesConfig;
+    public TextAsset notesConfig;
 }
