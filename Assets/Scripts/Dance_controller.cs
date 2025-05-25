@@ -9,7 +9,6 @@ public class Dance_controller: MonoBehaviour
     private UnityEvent _onSelectDance;
     [SerializeField]
     private UnityEvent _onDanceSelected;
-    [SerializeField]
     private SoundData _currentSoundData;
     public void ActivateSelectDance()
     {

@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicName: FJ Goblin
   animationName: Dancing
-  notesConfig: {fileID: 0}
+  notesConfig: {fileID: 4900000, guid: 3ee1e0f11e95bcc4aa7c0b15987bbb7e, type: 3}
+  speed: 0

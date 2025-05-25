@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicName: LD Nekomata Okayu
   animationName: Hip Hop Dancing
-  notesConfig: {fileID: 0}
+  notesConfig: {fileID: 4900000, guid: 6526ded9920404b4e8651b02be40fcea, type: 3}
+  speed: 0

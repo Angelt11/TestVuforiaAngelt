@@ -341,6 +341,7 @@ GameObject:
   - component: {fileID: 42864210}
   - component: {fileID: 42864209}
   - component: {fileID: 42864208}
+  - component: {fileID: 42864213}
   m_Layer: 5
   m_Name: NotesChecker
   m_TagString: Untagged
@@ -364,7 +365,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 50}
+  m_AnchoredPosition: {x: 0, y: 109}
   m_SizeDelta: {x: 418, y: 70.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &42864208
@@ -500,6 +501,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42864206}
   m_CullTransparentMesh: 1
+--- !u!114 &42864213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42864206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c6d511bc285094f8d1a270aae82d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onButtonPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 42864208}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Notes Checker pressed
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &62854608
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,7 +695,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.5}
-  m_SizeDelta: {x: 100, y: -1}
+  m_SizeDelta: {x: 140, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &79146011
 MonoBehaviour:
@@ -682,7 +710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.45490196}
+  m_Color: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 0.45490196}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1134,8 +1162,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 49.5}
-  m_SizeDelta: {x: 160, y: 29}
+  m_AnchoredPosition: {x: 0, y: 35}
+  m_SizeDelta: {x: 178.4, y: 47.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &748546218
 MonoBehaviour:
@@ -1181,13 +1209,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 39c6d511bc285094f8d1a270aae82d15, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 42864213}
+        m_TargetAssemblyTypeName: Notes_Checker, Assembly-CSharp
+        m_MethodName: DestroyNotes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1973,8 +2001,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioPrefix: 
   audioList:
-  - FJpGoblin
-  - Liar Dancer - Nekomata Okayu   (cover)
+  - FJ Goblin
+  - LD Nekomata Okayu
   - "Cucu\xED Ganon - Suavemente"
   audioS: {fileID: 62854609}
   musicS: {fileID: 23610654}
@@ -2355,10 +2383,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 79146010}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 50.5}
-  m_SizeDelta: {x: 100, y: -99}
+  m_AnchoredPosition: {x: 0, y: 86}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1611664703
 GameObject:
@@ -2477,28 +2505,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Dance_controller, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 751269340}
+        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+        m_MethodName: StopTimer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Dance_controller, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1983459010}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Hide Lanes
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1611664707
@@ -2773,7 +2801,6 @@ MonoBehaviour:
           m_StringArgument: Breakdance Ready
           m_BoolArgument: 0
         m_CallState: 2
-  _currentSoundData: {fileID: 0}
 --- !u!4 &1691743515
 Transform:
   m_ObjectHideFlags: 0
@@ -2807,7 +2834,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1868872708
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2928,7 +2955,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1983459008
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2949,8 +2976,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -700, y: -260}
+  m_AnchoredPosition: {x: 0.5, y: -0.5}
+  m_SizeDelta: {x: -1, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1983459009
 CanvasGroup:
@@ -3213,6 +3240,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Note
       objectReference: {fileID: 0}
+    - target: {fileID: 1754421797532794074, guid: 9531b6fcd0513aa41be69d2f96fd0170, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4951084959483300433, guid: 9531b6fcd0513aa41be69d2f96fd0170, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6379443635404773064, guid: 9531b6fcd0513aa41be69d2f96fd0170, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3296,8 +3331,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1754421797532794074, guid: 9531b6fcd0513aa41be69d2f96fd0170, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1937613784264965834}
   m_SourcePrefab: {fileID: 100100000, guid: 9531b6fcd0513aa41be69d2f96fd0170, type: 3}
+--- !u!1 &1937613784264965833 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1754421797532794074, guid: 9531b6fcd0513aa41be69d2f96fd0170, type: 3}
+  m_PrefabInstance: {fileID: 1937613784264965832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1937613784264965834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937613784264965833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b122b7066e4f540879e77a331c756f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
