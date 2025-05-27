@@ -1,10 +1,10 @@
 {
-    "dependencies": {
+  "dependencies": {
     "com.ptc.vuforia.engine": "file:com.ptc.vuforia.engine-11.2.4.tgz",
     "com.unity.ai.navigation": "2.0.6",
     "com.unity.collab-proxy": "2.8.2",
     "com.unity.ide.rider": "3.0.31",
-    "com.unity.ide.visualstudio": "2.0.22",
+    "com.unity.ide.visualstudio": "2.0.23",
     "com.unity.inputsystem": "1.13.1",
     "com.unity.multiplayer.center": "1.0.0",
     "com.unity.render-pipelines.universal": "17.0.4",
