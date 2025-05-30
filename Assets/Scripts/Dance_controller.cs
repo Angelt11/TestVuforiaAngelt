@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Dance_controller: MonoBehaviour
+public class Dance_controller : MonoBehaviour
 {
     [SerializeField]
     private Animator _characterAnimator;
@@ -26,6 +26,10 @@ public class Dance_controller: MonoBehaviour
         _characterAnimator.Play(_currentSoundData.animationName);
         SoundManager.instance.PlayMusic(_currentSoundData.musicName);
         _notesManager.StartNoteChart(_currentSoundData.notesConfig, _currentSoundData.speed);
+    }
+    public void FailedNote()
+    {
+        
     }
 
 }

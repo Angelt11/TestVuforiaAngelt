@@ -366,7 +366,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 109}
-  m_SizeDelta: {x: 418, y: 70.3}
+  m_SizeDelta: {x: 223, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &42864208
 Animator:
@@ -461,7 +461,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 420, y: 68}
+  m_Size: {x: 218, y: 55}
   m_EdgeRadius: 0
 --- !u!114 &42864211
 MonoBehaviour:
@@ -670,7 +670,7 @@ GameObject:
   - component: {fileID: 79146011}
   - component: {fileID: 79146013}
   m_Layer: 5
-  m_Name: Lane
+  m_Name: Lane 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -695,7 +695,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 109, y: -0.5}
+  m_AnchoredPosition: {x: 114, y: -0.5}
   m_SizeDelta: {x: 140, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &79146011
@@ -1321,7 +1321,7 @@ GameObject:
   - component: {fileID: 680688011}
   - component: {fileID: 680688009}
   m_Layer: 5
-  m_Name: Lane 1
+  m_Name: Lane 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1360,7 +1360,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -109, y: -0.5}
+  m_AnchoredPosition: {x: -114, y: -0.5}
   m_SizeDelta: {x: 140, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &680688011
@@ -2470,7 +2470,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 109}
-  m_SizeDelta: {x: 418, y: 70.3}
+  m_SizeDelta: {x: 223, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1473926857
 MonoBehaviour:
@@ -2592,7 +2592,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 420, y: 68}
+  m_Size: {x: 218, y: 55}
   m_EdgeRadius: 0
 --- !u!114 &1473926861
 MonoBehaviour:
