@@ -15,17 +15,24 @@ public class NotesManager : MonoBehaviour
     private UnityEvent<string> _onWinSong;
     [SerializeField]
     private UnityEvent<string> _onLoseSong;
+    [SerializeField]
+    private UnityEvent _onFinishSong;
     private NoteChart _currentNoteChart;
     private float _currentSpeed;
     private float _timer;
     private int _correctNotesCount;
+    private int _notesCount;
+    private int _currentNotesCount;
     private Coroutine _spawnNotesCoroutine;
+    private List<GameObject> _instantiatedNotes = new List<GameObject>();
     public void StartNoteChart(TextAsset noteChartAsset, float speed)
     {
         _currentSpeed = speed;
         _currentNoteChart = JsonUtility.FromJson<NoteChart>(noteChartAsset.text);
         _timer = 0f;
         _correctNotesCount = 0;
+        _notesCount = 0;
+        _currentNotesCount = _currentNoteChart.notes.Count;
         _spawnNotesCoroutine = StartCoroutine(SpawnNotes());
     }
     private IEnumerator SpawnNotes()
@@ -51,10 +58,10 @@ public class NotesManager : MonoBehaviour
                 note.transform.SetParent(currentLane.transform);
                 note.transform.localScale = Vector3.one;
                 note.Speed = _currentSpeed;
+
+                _instantiatedNotes.Add(noteObject);
             }
         }
-        yield return new WaitForSeconds(_finishTime);
-        FinishSong();
         _spawnNotesCoroutine = null;
     }
 
@@ -67,22 +74,52 @@ public class NotesManager : MonoBehaviour
         }
         _currentNoteChart = null;
         _timer = 0f;
+        while (_instantiatedNotes.Count > 0)
+        {
+            GameObject note = _instantiatedNotes[0];
+            _instantiatedNotes.RemoveAt(0);
+            if (note != null)
+            {
+                Destroy(note);
+            }
+            
+        }
     }
 
     public void AddCorrectNote()
     {
         _correctNotesCount++;
+        AddNoteCount();
     }
 
-    private void FinishSong()
+    public void AddNoteCount(int number = 1)
     {
+        _notesCount += number;
+        if (_notesCount >= _currentNotesCount)
+        {
+            StartCoroutine(FinishSong());
+        }
+    }
+    
+    public void RemoveCorrectNote()
+    {
+        if (_correctNotesCount > 0)
+        {
+            _correctNotesCount--;
+        }
+    }
+
+    private IEnumerator FinishSong()
+    {
+        yield return new WaitForSeconds(_finishTime);
+        _onFinishSong?.Invoke();
         if (_correctNotesCount >= _currentNoteChart.notes.Count * 0.7f)
         {
-            _onWinSong?.Invoke(_correctNotesCount + " / " + _currentNoteChart.notes.Count);
+            _onWinSong?.Invoke(_correctNotesCount + " / " + _currentNotesCount);
         }
         else
         {
-            _onLoseSong?.Invoke(_correctNotesCount + " / " + _currentNoteChart.notes.Count);
+            _onLoseSong?.Invoke(_correctNotesCount + " / " + _currentNotesCount);
         }
     }
 }
