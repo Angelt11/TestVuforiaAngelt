@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Reflection;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,15 +9,14 @@ public class Timer : MonoBehaviour
     [SerializeField]
     private UnityEvent _onTimerFinished;
     private Coroutine _timerCoroutine;
-    public void StartTimer(float duration)
-        
+    public void StartTimer(float duration) 
     {
         _timerCoroutine = StartCoroutine(RunTimer(duration));
     }
     private IEnumerator RunTimer(float duration)
     {
         _onSecondPassed?.Invoke("" + duration);
-        yield return new WaitForSeconds(duration);
+        yield return new WaitForSeconds(1);
         duration--; 
         if (duration > 0)
         {

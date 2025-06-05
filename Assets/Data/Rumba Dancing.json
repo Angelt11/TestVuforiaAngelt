@@ -1,0 +1,19 @@
+{
+	"notes":[
+	{"time":1.0,"lane":1},
+	{"time":1.5,"lane":2},
+	{"time":2.0,"lane":3},
+	{"time":2.5,"lane":4},
+	{"time":3.0,"lane":1},
+	{"time":3.5,"lane":2},
+	{"time":4.0,"lane":3},
+	{"time":4.5,"lane":4},
+	{"time":5.0,"lane":1},
+	{"time":5.5,"lane":2},
+	{"time":6.0,"lane":3},
+	{"time":6.5,"lane":4},
+	{"time":7.0,"lane":1},
+	{"time":7.5,"lane":2}
+
+	]
+}

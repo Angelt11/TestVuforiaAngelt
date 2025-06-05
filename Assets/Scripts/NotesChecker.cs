@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Notes_Checker : MonoBehaviour
+public class NotesChecker : MonoBehaviour
 {
     [SerializeField]
     private UnityEvent onButtonPressed;

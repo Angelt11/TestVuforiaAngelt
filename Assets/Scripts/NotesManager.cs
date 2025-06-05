@@ -92,15 +92,15 @@ public class NotesManager : MonoBehaviour
         AddNoteCount();
     }
 
-    public void AddNoteCount(int number = 1)
+    public void AddNoteCount()
     {
-        _notesCount += number;
+        _notesCount++;
         if (_notesCount >= _currentNotesCount)
         {
             StartCoroutine(FinishSong());
         }
     }
-    
+
     public void RemoveCorrectNote()
     {
         if (_correctNotesCount > 0)
@@ -113,7 +113,7 @@ public class NotesManager : MonoBehaviour
     {
         yield return new WaitForSeconds(_finishTime);
         _onFinishSong?.Invoke();
-        if (_correctNotesCount >= _currentNoteChart.notes.Count * 0.7f)
+        if (_correctNotesCount >= _currentNotesCount * 0.7f)
         {
             _onWinSong?.Invoke(_correctNotesCount + " / " + _currentNotesCount);
         }

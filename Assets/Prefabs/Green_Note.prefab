@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4951084959483300433}
   - component: {fileID: 3258049105265744743}
   m_Layer: 5
-  m_Name: Yelllow_Note
+  m_Name: Green_Note
   m_TagString: Note
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,14 +60,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.8965112, b: 0.08018869, a: 1}
+  m_Color: {r: 0.07843137, g: 1, b: 0.108343706, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 528aa960ff8f73a4dbfd548baae8f0d0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

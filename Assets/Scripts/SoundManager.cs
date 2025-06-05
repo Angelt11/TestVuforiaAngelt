@@ -8,11 +8,10 @@ public class SoundManager : MonoBehaviour
     // Start is called before the first frame update
     public string audioPrefix;
     public static SoundManager instance;
-    public string[] audioList = {"pop"};
     public AudioSource audioS;
     public AudioSource musicS;
     public AudioMixer masterMixer;
-    Dictionary<string,AudioClip> audioDictionary;
+    Dictionary<string,AudioClip> audioDictionary = new Dictionary<string,AudioClip>();
     void Awake()
     {
         if(instance == null){
@@ -21,25 +20,27 @@ public class SoundManager : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
-
-        audioS = GetComponent<AudioSource>();
-        audioDictionary = new Dictionary<string,AudioClip>();
-        foreach(string key in audioList){
-            AudioClip audio = Resources.Load<AudioClip>("Audio/" + audioPrefix + key); 
-            audioDictionary.Add(key,audio);
-        }
     }
 
-    public void Play(string soundname,float volume, float pitch) {
-        
-        if (!audioDictionary.ContainsKey(soundname)) {
-            Debug.LogWarning("SoundManager: Tried to play undefined sound: " + soundname);
-        }else{
-            audioS.pitch = pitch;
-            audioS.volume = volume;
-            audioS.PlayOneShot(audioDictionary[soundname],volume);
+    public void Play(string soundname, float volume, float pitch)
+    {
+        if (!audioDictionary.ContainsKey(soundname) || audioDictionary[soundname] == null)
+        {
+            AudioClip audio = Resources.Load<AudioClip>("Audio/" + audioPrefix + soundname);
+            if (audio != null)
+            {
+                audioDictionary[soundname] = audio;
+            }
+            else
+            {
+                Debug.LogWarning($"SoundManager: Could not load or find sound '{soundname}' in Resources/Audio/");
+                return;
+            }
         }
-    
+
+        audioS.pitch = pitch;
+        audioS.volume = volume;
+        audioS.PlayOneShot(audioDictionary[soundname], volume);
     }
 
     public void Play(string soundname){
@@ -50,16 +51,27 @@ public class SoundManager : MonoBehaviour
         Play(soundname,volume,1f);
     }
 
-    public void PlayMusic(string soundname,float volume){
-        if (!audioDictionary.ContainsKey(soundname)) {
-            Debug.LogWarning("SoundManager: Tried to play undefined sound: " + soundname);
-        }else{
-            musicS.Stop();
-            musicS.loop = true;
-            musicS.clip = audioDictionary[soundname];
-            musicS.volume = volume;
-            musicS.Play();
+    public void PlayMusic(string soundname, float volume)
+    {
+        if (!audioDictionary.ContainsKey(soundname) || audioDictionary[soundname] == null)
+        {
+            AudioClip audio = Resources.Load<AudioClip>("Audio/" + audioPrefix + soundname);
+            if (audio != null)
+            {
+                audioDictionary[soundname] = audio;
+            }
+            else
+            {
+                Debug.LogWarning($"SoundManager: Could not load or find music '{soundname}' in Resources/Audio/");
+                return;
+            }
         }
+
+        musicS.Stop();
+        musicS.loop = true;
+        musicS.clip = audioDictionary[soundname];
+        musicS.volume = volume;
+        musicS.Play();
     }
 
     public void PlayMusic(string soundname){
