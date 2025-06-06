@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58629b71a4edf1746959dd08cd26ab49, type: 3}
-  m_Name: Dancing
+  m_Name: ShoppingCart
   m_EditorClassIdentifier: 
-  musicName: FJGoblin
-  animationName: Dancing
-  notesConfig: {fileID: 4900000, guid: 3ee1e0f11e95bcc4aa7c0b15987bbb7e, type: 3}
+  musicName: "Cucu\xEDGanon-Suavemente"
+  animationName: ShoppingCartDance
+  notesConfig: {fileID: 4900000, guid: a0634eaafe2d780469281dae0ddd7793, type: 3}
   speed: 80
