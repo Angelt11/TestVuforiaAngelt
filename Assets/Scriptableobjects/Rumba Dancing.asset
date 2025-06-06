@@ -15,4 +15,4 @@ MonoBehaviour:
   musicName: Hyrule Circuit MK8D
   animationName: Rumba Dancing
   notesConfig: {fileID: 4900000, guid: 58ecd90e39f1db447b144095b862a758, type: 3}
-  speed: 100
+  speed: 80

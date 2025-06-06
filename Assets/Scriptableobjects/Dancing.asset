@@ -15,4 +15,4 @@ MonoBehaviour:
   musicName: FJ Goblin
   animationName: Dancing
   notesConfig: {fileID: 4900000, guid: 3ee1e0f11e95bcc4aa7c0b15987bbb7e, type: 3}
-  speed: 100
+  speed: 80

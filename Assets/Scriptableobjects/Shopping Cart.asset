@@ -15,4 +15,4 @@ MonoBehaviour:
   musicName: "Cucu\xED Ganon - Suavemente"
   animationName: Shopping Cart Dance
   notesConfig: {fileID: 4900000, guid: a0634eaafe2d780469281dae0ddd7793, type: 3}
-  speed: 100
+  speed: 80
