@@ -1,35 +1,144 @@
 {
-	"notes":[
-	{"time":1.0,"lane":1},
-	{"time":1.5,"lane":2},
-	{"time":2.0,"lane":1},
-	{"time":2.5,"lane":2},
-	{"time":3.0,"lane":3},
-	{"time":3.5,"lane":2},
-	{"time":4.0,"lane":1},
-	{"time":4.5,"lane":2},
-	{"time":5.0,"lane":3},
-	{"time":5.5,"lane":2},
-	{"time":6.0,"lane":1},
-	{"time":6.5,"lane":2},
-	{"time":7.0,"lane":1},
-	{"time":7.5,"lane":2},
-	{"time":8.0,"lane":1},
-	{"time":8.5,"lane":2},
-	{"time":9.0,"lane":1},
-	{"time":9.5,"lane":2},
-	{"time":10.0,"lane":1},
-	{"time":10.5,"lane":2},
-	{"time":11.0,"lane":1},
-	{"time":11.5,"lane":2},
-	{"time":12.0,"lane":1},
-	{"time":12.5,"lane":2},
-	{"time":13.0,"lane":3},
-	{"time":13.5,"lane":2},
-	{"time":14.0,"lane":3},
-	{"time":14.5,"lane":2},
-	{"time":15.0,"lane":1},
-	{"time":15.5,"lane":2},
-	{"time":16.0,"lane":1}
-	]
+    "notes": [
+        {
+            "time": 0.28,
+            "lane": 0
+        },
+        {
+            "time": 0.89,
+            "lane": 2
+        },
+        {
+            "time": 1.16,
+            "lane": 1
+        },
+        {
+            "time": 1.53,
+            "lane": 2
+        },
+        {
+            "time": 2.19,
+            "lane": 0
+        },
+        {
+            "time": 2.55,
+            "lane": 0
+        },
+        {
+            "time": 2.88,
+            "lane": 1
+        },
+        {
+            "time": 3.52,
+            "lane": 1
+        },
+        {
+            "time": 3.89,
+            "lane": 1
+        },
+        {
+            "time": 4.21,
+            "lane": 1
+        },
+        {
+            "time": 4.55,
+            "lane": 2
+        },
+        {
+            "time": 4.86,
+            "lane": 0
+        },
+        {
+            "time": 5.36,
+            "lane": 0
+        },
+        {
+            "time": 5.72,
+            "lane": 1
+        },
+        {
+            "time": 6.21,
+            "lane": 0
+        },
+        {
+            "time": 6.49,
+            "lane": 0
+        },
+        {
+            "time": 6.87,
+            "lane": 1
+        },
+        {
+            "time": 7.18,
+            "lane": 0
+        },
+        {
+            "time": 7.53,
+            "lane": 0
+        },
+        {
+            "time": 7.85,
+            "lane": 2
+        },
+        {
+            "time": 8.05,
+            "lane": 1
+        },
+        {
+            "time": 8.38,
+            "lane": 2
+        },
+        {
+            "time": 8.87,
+            "lane": 1
+        },
+        {
+            "time": 9.07,
+            "lane": 1
+        },
+        {
+            "time": 9.27,
+            "lane": 1
+        },
+        {
+            "time": 9.55,
+            "lane": 0
+        },
+        {
+            "time": 9.87,
+            "lane": 0
+        },
+        {
+            "time": 10.19,
+            "lane": 0
+        },
+        {
+            "time": 10.72,
+            "lane": 2
+        },
+        {
+            "time": 11.03,
+            "lane": 0
+        },
+        {
+            "time": 11.24,
+            "lane": 0
+        },
+        {
+            "time": 11.55,
+            "lane": 0
+        },
+        {
+            "time": 11.89,
+            "lane": 1
+        },
+        {
+            "time": 12.39,
+            "lane": 0
+        },
+        {
+            "time": 12.72,
+            "lane": 0
+        }
+    ]
 }

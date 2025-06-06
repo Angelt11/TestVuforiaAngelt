@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicName: LDNekomataOkayu
   animationName: HipHopDancing
-  notesConfig: {fileID: 4900000, guid: 6526ded9920404b4e8651b02be40fcea, type: 3}
-  speed: 80
+  notesConfig: {fileID: 4900000, guid: 5e0c745ffacca35418f60b682386ddac, type: 3}
+  speed: 100

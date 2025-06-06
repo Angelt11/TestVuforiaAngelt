@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicName: HyruleCircuitMK8D
   animationName: RumbaDancing
-  notesConfig: {fileID: 4900000, guid: a335f60824001b74b8c3359f753e7916, type: 3}
-  speed: 80
+  notesConfig: {fileID: 4900000, guid: 9c05861dbf50da34d9905e5bb1c95759, type: 3}
+  speed: 130

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicName: "Cucu\xEDGanon-Suavemente"
   animationName: ShoppingCartDance
-  notesConfig: {fileID: 4900000, guid: a0634eaafe2d780469281dae0ddd7793, type: 3}
-  speed: 80
+  notesConfig: {fileID: 4900000, guid: df19210379b128940bd0762906fbad23, type: 3}
+  speed: 100
