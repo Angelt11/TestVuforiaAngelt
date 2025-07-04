@@ -1,10 +1,19 @@
 # ninja log v5
 0	1829	7709539111757140	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	6274a2c56d96bfe
+1584	2535	7709539122198956	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	ad50972ec703d2f8
 205	1839	7709539109896349	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	353193e0c6320c77
+1334	2365	7709539120523695	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	efa7ba95876f5628
 408	1843	7709539112705910	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	6f2ea01bb73c003d
 614	1847	7709539114195495	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	c18b3496db1bab47
 828	1961	7709539116447471	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	1912b452da0f7467
-1068	2359	7709539120462460	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	50bccacb59954300
-1334	2365	7709539120523695	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	efa7ba95876f5628
-1584	2535	7709539122198956	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	ad50972ec703d2f8
 2535	2901	7709539125896354	C:/Users/Angel Torres/Documents/unity projects/TestVuforiaAngelt/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/636i105t/obj/arm64-v8a/libgame.so	8f2ee3b8edc72805
+1068	2359	7709539120462460	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	50bccacb59954300
+38	886	7733736954209198	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	1912b452da0f7467
+16	899	7733736954291013	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	353193e0c6320c77
+57	953	7733736954932774	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	c18b3496db1bab47
+68	969	7733736955072485	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	efa7ba95876f5628
+27	981	7733736955214518	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	6f2ea01bb73c003d
+80	1065	7733736956081641	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	ad50972ec703d2f8
+47	1167	7733736957042694	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	50bccacb59954300
+6	1207	7733736957420583	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	6274a2c56d96bfe
+1208	1387	7733736959290780	C:/Users/Angel Torres/Documents/unity projects/TestVuforiaAngelt/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/636i105t/obj/arm64-v8a/libgame.so	8f2ee3b8edc72805
