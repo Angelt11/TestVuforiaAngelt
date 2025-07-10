@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Note
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -12,12 +13,12 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Ui Buttons
+  - Lanes
+  - Notes
+  - Buttons
+  - Timer
+  - Results Screen
   - 
   - 
   - 
@@ -41,6 +42,24 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ui Buttons
+    uniqueID: 2856078417
+    locked: 0
+  - name: Lanes
+    uniqueID: 408104555
+    locked: 0
+  - name: Notes
+    uniqueID: 1256035659
+    locked: 0
+  - name: Buttons
+    uniqueID: 172721621
+    locked: 0
+  - name: Timer
+    uniqueID: 2175691747
+    locked: 0
+  - name: Results Screen
+    uniqueID: 2298255277
     locked: 0
   m_RenderingLayers:
   - Default

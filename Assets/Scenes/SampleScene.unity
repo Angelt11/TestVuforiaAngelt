@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 42864209}
   - component: {fileID: 42864208}
   - component: {fileID: 42864213}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: NotesChecker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -593,7 +593,7 @@ GameObject:
   - component: {fileID: 62747079}
   - component: {fileID: 62747081}
   - component: {fileID: 62747080}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -943,7 +943,7 @@ GameObject:
   - component: {fileID: 183579061}
   - component: {fileID: 183579060}
   - component: {fileID: 183579059}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: ButtonShoppingCart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1152,7 +1152,7 @@ GameObject:
   - component: {fileID: 365079320}
   - component: {fileID: 365079319}
   - component: {fileID: 365079323}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: FailChecker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1515,7 +1515,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 671671712}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: NotesOrigin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1646,7 +1646,7 @@ GameObject:
   - component: {fileID: 691056491}
   - component: {fileID: 691056490}
   - component: {fileID: 691056489}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: LaneButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1778,7 +1778,7 @@ GameObject:
   - component: {fileID: 748546220}
   - component: {fileID: 748546219}
   - component: {fileID: 748546218}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: LaneButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2072,7 +2072,7 @@ GameObject:
   - component: {fileID: 843753883}
   - component: {fileID: 843753882}
   - component: {fileID: 843753881}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: NotesChecker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2323,7 +2323,7 @@ GameObject:
   - component: {fileID: 871308869}
   - component: {fileID: 871308871}
   - component: {fileID: 871308870}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2402,7 +2402,7 @@ GameObject:
   - component: {fileID: 961772105}
   - component: {fileID: 961772106}
   - component: {fileID: 961772107}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: ResultsScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2475,7 +2475,7 @@ GameObject:
   - component: {fileID: 973185580}
   - component: {fileID: 973185582}
   - component: {fileID: 973185581}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2560,7 +2560,7 @@ GameObject:
   - component: {fileID: 1015615029}
   - component: {fileID: 1015615028}
   - component: {fileID: 1015615031}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: ButtonDancing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2806,7 +2806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1082664506}
   - component: {fileID: 1082664505}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: NotesManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3022,7 +3022,7 @@ GameObject:
   - component: {fileID: 1103587758}
   - component: {fileID: 1103587760}
   - component: {fileID: 1103587759}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3359,7 +3359,7 @@ GameObject:
   - component: {fileID: 1436390861}
   - component: {fileID: 1436390862}
   - component: {fileID: 1436390863}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: FinishText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3442,7 +3442,7 @@ GameObject:
   - component: {fileID: 1447811730}
   - component: {fileID: 1447811729}
   - component: {fileID: 1447811728}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: NotesChecker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3693,7 +3693,7 @@ GameObject:
   - component: {fileID: 1471464972}
   - component: {fileID: 1471464973}
   - component: {fileID: 1471464974}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: NotesCountText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4056,7 +4056,7 @@ GameObject:
   - component: {fileID: 1518242818}
   - component: {fileID: 1518242817}
   - component: {fileID: 1518242816}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: LaneButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4189,7 +4189,7 @@ GameObject:
   - component: {fileID: 1519925669}
   - component: {fileID: 1519925668}
   - component: {fileID: 1519925667}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: ButtonHipHopDancing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4341,7 +4341,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1546330943}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: NotesOrigin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4380,7 +4380,7 @@ GameObject:
   - component: {fileID: 1611664707}
   - component: {fileID: 1611664706}
   - component: {fileID: 1611664705}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: ButtonClose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4582,7 +4582,7 @@ GameObject:
   - component: {fileID: 1615234104}
   - component: {fileID: 1615234106}
   - component: {fileID: 1615234103}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: TimerText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4830,7 +4830,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1753204927}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: NotesOrigin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4869,7 +4869,7 @@ GameObject:
   - component: {fileID: 1938933394}
   - component: {fileID: 1938933393}
   - component: {fileID: 1938933392}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: ButtonRumbaDancing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
