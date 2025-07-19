@@ -23,6 +23,11 @@ public class NotesChecker : MonoBehaviour
         if (collision.CompareTag("Note"))
         {
             notes.Remove(collision.gameObject);
+            Note note = collision.GetComponent<Note>();
+            if (note != null)
+            {
+                note.WasFailed();
+            }
         }
     }
     public void DestroyNotes()
