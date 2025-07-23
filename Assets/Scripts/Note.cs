@@ -1,10 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Note : MonoBehaviour
 {
     [SerializeField]
     private float speed = 5f;
-    private SpriteRenderer spriteRenderer;
+    private Image image;
 
     private bool isTouched = false;
     public float Speed
@@ -14,7 +15,12 @@ public class Note : MonoBehaviour
     }
     private void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        image = GetComponent<Image>();
+        if (image == null)
+        {
+            Debug.LogError("Image component not found on Note object.");
+            image = gameObject.GetComponentInChildren<Image>();
+        }
     }
     private void Update()
     {
@@ -26,9 +32,13 @@ public class Note : MonoBehaviour
         {
             isTouched = true;
             //Animator animator = GetComponent<Animator>();
-            if (spriteRenderer != null)
+            if (image != null)
             {
-                spriteRenderer.color = Color.gray;
+                image.color = Color.gray;
+            }
+            else
+            {
+                Debug.LogWarning("Image component was not found.");
             }
         }
     }

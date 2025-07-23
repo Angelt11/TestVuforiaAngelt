@@ -17,6 +17,8 @@ public class NotesManager : MonoBehaviour
     private UnityEvent<string> _onLoseSong;
     [SerializeField]
     private UnityEvent _onFinishSong;
+    [SerializeField]
+    private Transform _notesLayerTransform;
     private NoteChart _currentNoteChart;
     private float _currentSpeed;
     private float _timer;
@@ -51,12 +53,20 @@ public class NotesManager : MonoBehaviour
                     Debug.LogWarning("Invalid lane index: " + noteData.lane);
                     continue;
                 }
-                Lane currentLane = _lanes[noteData.lane];
-                GameObject noteObject = Instantiate(currentLane.NotePrefab, currentLane.NotesOrigin.position, Quaternion.identity);
+                //Lane currentLane = _lanes[noteData.lane];
+                //GameObject noteObject = Instantiate(currentLane.NotePrefab, currentLane.NotesOrigin.position, Quaternion.identity);
 
+                //Note note = noteObject.GetComponent<Note>();
+                //note.transform.SetParent(currentLane.transform);
+                //note.transform.localScale = Vector3.one;
+                //note.Speed = _currentSpeed;
+                // _instantiatedNotes.Add(noteObject);
+                Lane currentLane = _lanes[noteData.lane];
+                GameObject noteObject = Instantiate(currentLane.NotePrefab,_notesLayerTransform);
+                noteObject.transform.position = currentLane.NotesOrigin.transform.position;
+                noteObject.transform.localScale = Vector3.one;
+                noteObject.transform.localRotation = Quaternion.identity;
                 Note note = noteObject.GetComponent<Note>();
-                note.transform.SetParent(currentLane.transform);
-                note.transform.localScale = Vector3.one;
                 note.Speed = _currentSpeed;
 
                 _instantiatedNotes.Add(noteObject);
