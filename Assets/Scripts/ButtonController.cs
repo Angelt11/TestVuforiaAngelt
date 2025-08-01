@@ -1,8 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class ButtonController : MonoBehaviour 
+public class ButtonController : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject GameUI;
+    [SerializeField]
+    private GameObject MenuUI;
     [SerializeField]
     private List<GameObject> buttons;
     [SerializeField]
@@ -26,9 +30,15 @@ public class ButtonController : MonoBehaviour
     }
     public void HideButtons()
     {
-        foreach(GameObject button in buttons)
+        foreach (GameObject button in buttons)
         {
             button.GetComponent<Animator>().Play(hideAnimationName);
         }
+    }
+    public void TransitionGameUI()
+    {
+        HideButtons();
+        MenuUI.SetActive(false);
+        GameUI.SetActive(true);
     }
 }
